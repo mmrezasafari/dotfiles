@@ -7,11 +7,12 @@ return {
       ensure_installed = {
         "cmake",
         "cpp",
-        "html",
         "css",
         "gitignore",
         "http",
         "scss",
+        "javascript",
+        "typescript",
         "vue",
       },
 

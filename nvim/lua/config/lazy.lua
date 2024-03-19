@@ -13,7 +13,7 @@ require("lazy").setup({
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
       opts = {
-        colorscheme = "solarized-osaka",
+        -- colorscheme = "nightfox",
         news = {
           lazyvim = true,
           neovim = true,
@@ -21,13 +21,13 @@ require("lazy").setup({
       },
     },
     -- import any extras modules here
-    { import = "lazyvim.plugins.extras.linting.eslint" },
-    { import = "lazyvim.plugins.extras.formatting.prettier" },
-    { import = "lazyvim.plugins.extras.lang.tailwind" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.cmake" },
+    { import = "lazyvim.plugins.extras.lang.tailwind" },
     { import = "lazyvim.plugins.extras.coding.codeium" },
-    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
     { import = "plugins" },
   },
@@ -44,7 +44,6 @@ require("lazy").setup({
   performance = {
     cache = {
       enabled = true,
-      -- disabled_events = {},
     },
     rtp = {
       -- disable some rtp plugins
@@ -52,7 +51,7 @@ require("lazy").setup({
         "gzip",
         -- "matchit",
         -- "matchparen",
-        "netrwPlugin",
+        -- "netrwPlugin",
         "tarPlugin",
         "tohtml",
         "tutor",
@@ -60,12 +59,4 @@ require("lazy").setup({
       },
     },
   },
-  ui = {
-    custom_keys = {
-      ["<localleader>d"] = function(plugin)
-        dd(plugin)
-      end,
-    },
-  },
-  debug = false,
 })

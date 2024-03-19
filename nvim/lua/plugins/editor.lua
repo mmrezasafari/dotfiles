@@ -6,13 +6,12 @@ return {
     opts = {
       search = {
         forward = true,
-        multi_window = true,
+        multi_window = false,
         wrap = false,
         incremental = true,
       },
     },
   },
-
   {
     "dinhhuy258/git.nvim",
     event = "BufReadPre",
@@ -25,7 +24,6 @@ return {
       },
     },
   },
-
   {
     "telescope.nvim",
     dependencies = {
